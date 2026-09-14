@@ -12,6 +12,8 @@ There are 3 access modifiers in C++:
 - Accessible only inside the class.
 - Cannot be accessed directly using an object.
 - In a C++ class, members are private by default.
+
+We can cannot access but we can make some specific functions(public) and work on it.
 Example:
     class Teacher {
         private:
@@ -51,18 +53,30 @@ using namespace std;
 class Teacher {
 private:
     double salary;
-
-protected:
-    string subject;
-
 public:
-    string name;
-    // Public method to set the private salary.
-    void setSalary(double s) {
-        salary = s;
-    }
-    // Public method to access the private salary.
-    void showSalary() {
-        cout << "Salary: " << salary << endl;
-    }
+string name;
+string subject;
+string dept;
+
+     void changedept(string newDept){
+        dept=newDept;
+     }
+     void setSalary(double s){              //This specical function is called setter
+        salary=s;
+     }
+     double getSalary(){                     //This special function is called getter
+        return salary;
+     }
 };
+
+int main(){
+    Teacher t1;
+    t1.name="ashmit";
+    t1.subject="CSE";
+    t1.dept="Computer Science";
+    cout<<"Salary is:"<<t1.getSalary()<<endl; //0 as not intialized
+    double s=50000;
+    t1.setSalary(s);
+    cout<<t1.getSalary()<<endl;
+    cout<<t1.name<<endl;
+}
