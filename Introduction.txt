@@ -1,0 +1,18 @@
+#Object Oriented Programming: It is a Programming paradigm(Pattern) that oraganizes software around objects rather than functions 
+and logic.
+
+•Improves Code reusability.
+•OOP is based on concept of object and classes.
+•Makes program easier to understand and manage.
+
+C++ Object-Oriented Programming (OOP)
+This repository contains my learning and practice of Object-Oriented Programming concepts in C++.
+
+I will be learning each concept through notes, examples, and practical programs.
+
+Topics I will cover:
+
+1. Classes and Objects
+2. Access Modifiers
+
+This repository will be updated as I progress through my OOP learning journey.
